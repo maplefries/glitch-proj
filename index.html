@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>The Willow Game</h1>
+    
+    <p>
+     Hi! Welcome to the Willow Game :3. I hope you enjoy the game!
+    </p>
+    
+    <audio src="https://cdn.glitch.com/048a600a-ce76-4b2b-af97-c21081f0d8ef%2Fmyaudio.wav?v=1616647576574" id="myaudio"></audio>
+    <img  id = "myimg" src= "https://cdn.glitch.com/048a600a-ce76-4b2b-af97-c21081f0d8ef%2Fraphael-renter-csae9W8JAsw-unsplash.jpg?v=1616646596620" alt="fire" width="100" height="100" class = "hidden">
+    
+   
+    
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+    
+    
+    <button id="stopBtn" class = "hidden" onclick="stopGame()">
+      Stop
+    </button>
+    
+  
+    
+    
+    <div id="gameButtonArea">
+      
+      
+     
+       <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"> </button>
+       <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+       <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+       <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
+       <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"></button>
+      
+    
+      
+    </div>
+    
+    
+    
+
+  </body>
+</html>
